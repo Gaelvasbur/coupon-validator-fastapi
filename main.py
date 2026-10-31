@@ -13,7 +13,7 @@ app = FastAPI(
 
 
 # ---------------------------------------------------------
-# CHAPTER 2: Bussines logic (also objects)
+# CHAPTER 2: Bussines logic
 # ---------------------------------------------------------
 class DiscountType(str, Enum):
     PERCENTAGE = "PERCENTAGE"
@@ -77,7 +77,7 @@ def calculate_discount(coupon: Coupon, total_amount: float) -> float:
 
 
 # ---------------------------------------------------------
-# CHAPTER 5: Controller (some objects)
+# CHAPTER 5: Controller
 # ---------------------------------------------------------
 class CouponValidateRequest(BaseModel):
     code: str = Field(..., min_length=1, examples=["CUPON10"])
