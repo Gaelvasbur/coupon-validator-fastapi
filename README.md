@@ -1,4 +1,5 @@
 # FastAPI Coupon Validator (Tennis Store)
+🚀 **Live Production API (AWS ECS):** [Interactive Swagger UI Docs] https://co-fd3479925bf34315a8f37d95e72b9b79.ecs.us-east-2.on.aws/docs
 
 A lightweight REST API microservice built with **Python 3.11+** and **FastAPI** to validate e-commerce promo codes and calculate cart discounts in real time.
 
@@ -62,6 +63,8 @@ There is no external database setup required. Four sample coupons live in a dict
 - **Framework:** FastAPI
 - **Validation / Typing:** Pydantic v2
 - **ASGI Server:** Uvicorn
+- **Testing:** PyTest & HTTPX
+- **Cloud & DevOps:** Docker, AWS ECR, Amazon ECS
 
 ## Requirements & Setup
 
@@ -100,6 +103,12 @@ Interactive docs are available at:
 - Swagger UI: [http://localhost:8080/docs](http://localhost:8080/docs)
 - ReDoc: [http://localhost:8080/redoc](http://localhost:8080/redoc)
 
+## 🧪 Automated Unit Tests (PyTest)
+
+Run the automated test suite locally to verify business rules and edge cases:
+```bash
+pytest
+```
 ## Automated Testing via cURL
 
 ### 1. Test 10% Off (`CUPON10`)
